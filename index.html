@@ -1,15 +1,57 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400&display=swap" rel="stylesheet">
     <title>Norbu</title>
     <style>
     a {
-    font-weight: bold;
-
+      font-weight: bold;
+      color: #00d973;
     }
+
+    .logo {
+      letter-spacing: -0.2rem;
+      line-height: 0.7;
+      font-size: 8rem;
+      color: #0024cc;
+      text-shadow: 4px 4px #00d973;
+    }
+
+    .logo-font {
+      font-family: 'Nunito', sans-serif;
+    }
+
+    body {
+      color: #0024cc;
+
+      background: linear-gradient(-45deg, #ffe600, #009CE9, #fff, #fff);
+      background-size: 400% 400%;
+      animation: gradient 15s ease infinite;
+      height: 100vh;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
     </style>
   </head>
   <body>
+    <div class="logo logo-font" style="
+      padding:3rem 3rem 1rem 3rem;
+      ">
+      norbu
+    </div>
     <div style="
       letter-spacing: -0.2rem;
       padding:3rem 3rem 1rem 3rem;
@@ -18,7 +60,7 @@
       font-family:monospace;
       width: 70%;
       ">
-      After clubbing its way into <a href="https://norbu.bandcamp.com">adulthood</a>*, Norbu is ready to take a break from beats and explore the world of leisure.
+      After clubbing its way into <a href="https://norbu.bandcamp.com">adulthood</a>*, <span class="logo-font">norbu</span> is ready to take a break from beats and explore the world of leisure.
     </div>
     <div style="
       letter-spacing: -0.2rem;
@@ -33,7 +75,6 @@
     <code>
       <span class="ascii" style="
         color: black;
-        background: white;
         display:inline-block;
         white-space:pre;
         letter-spacing:0;
