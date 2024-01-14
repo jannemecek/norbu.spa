@@ -5,6 +5,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="/output.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+    <script type="text/javascript" src="snowstorm.js"></script>
 
     <title>norbu</title>
     <style>
@@ -59,9 +61,11 @@
       }
     }
 
+    /*
     header {
       background-image:linear-gradient(rgba(135, 80, 156, 0.0), rgba(63, 63, 63, 0.8)), url('images/hero.png')
     }
+    */
 
     </style>
   </head>
@@ -93,8 +97,10 @@ Culinary Delights, Auditory Heights
       </div>
     </nav>
     <!-- Hero -->
-    <header class="w-full justify-center relative h-[600px] bg-cover bg-center flex flex-col justify-center items-center">
-      <h3 class="text-5xl uppercase font-medium animate-pulse">
+    <header class="relative w-full justify-center relative min-h-[450px] bg-cover overflow-clip bg-center flex flex-col justify-center items-center">
+      <video src="images/hero.mp4" autoplay loop muted class="absolute object-cover w-full h-full"></video>
+
+      <h3 class="text-5xl uppercase font-medium animate-pulse hidden">
         Relax. Refresh. Recharge.
       </h3>
     </header>
@@ -120,7 +126,8 @@ Join us in this harmonious fusion of spa mastery and musical narrative, where ea
       <!-- Header -->
       <div class="flex justify-between items-center py-10">
         <!-- Releases -->
-        <div class="flex-col md:flex-row flex space-x-0 md:space-x-10">
+        <!-- SPA 01 -->
+        <div class="flex-col md:flex-row flex items-center space-x-0 md:space-x-10">
           <div class="w-full md:w-1/2 flex flex-col">
             <p class="text-lg uppercase h-6">
               norbuspa01
@@ -131,16 +138,22 @@ Join us in this harmonious fusion of spa mastery and musical narrative, where ea
             <img src="images/spa01.jpeg" class="">
           </div>
           <div class="w-full md:w-1/2 text-2xl mt-28">
-            "Day One (At the Spa)" by lbdl is a mesmerizing debut that weaves the tale of two souls embarking on a transcendent journey of relaxation and culinary delight within the sanctuary of a spa. This ethereal soundscape, rich in ambient textures, captures the essence of their euphoric adventure, as they navigate through a realm of serene hot springs and aromatic treatment rooms, heightened by a state of blissful intoxication.
+            "Day One (At the Spa)" by lbdl is a mesmerizing debut that weaves the tale of two souls embarking on a hazy but transcendent journey of relaxation and culinary delight within the sanctuary of a spa. Hinting the start of their euphoric adventure, the album artfully juxtaposes the exhilaration of their high with the tranquil ambiance of the spa, crafting a narrative that dances between the soothing tranquility of relaxation and the joyous indulgence in gourmet pleasures.
             <br><br>
-              The album artfully juxtaposes the exhilaration of their high with the tranquil ambiance of the spa, crafting a narrative that dances between the soothing tranquility of relaxation and the joyous indulgence in gourmet pleasures. Each track in "Day One" is an invitation to experience relaxation as an art form, where the act of listening mirrors the sublime pleasure of a spa day, entwined with the delights of epicurean exploration.
+              As the narrative unfolds, it crescendos into dramatic confrontations and exhilarating conclusions, each moment a brushstroke in this intricate mural of life. The story, imbued with depth and realism, leaves the audience yearning to accompany our heroes further. It poses an enigmatic question: What revelations will the morrow bring in this odyssey of the soul? This part of the journey is not just a sequence of events, but a poetic exploration of life's ebb and flow, inviting the listener to ponder the unfathomable depths of the human experience.
+              <br><br>
+            <a href="https://open.spotify.com/album/1B3fSmv5xADRuRN0nT2kCc?si=q6XZ1srrTJuKS1xQu8u63w" target="_blank" class="hover:opacity-50">
+              Listen
+            </a>
           </div>
         </div>
+        <!-- END SPA 01 -->
       </div>
     </div>
     <!-- Spa -->
-    <div style="background-image: url('images/hero2.png')" class="w-full justify-center relative h-[600px] bg-cover bg-center flex flex-col justify-center items-center">
-      <h3 class="text-3xl uppercase font-medium animate-spin-slow">
+    <div class="relative w-full justify-center relative h-[500px] overflow-clip bg-cover bg-center flex flex-col justify-center items-center">
+      <video src="images/footer.mp4" autoplay loop muted class="absolute object-cover w-full h-full"></video>
+      <h3 class="text-3xl uppercase font-medium animate-spin-slow hidden">
         Euphoria Meets Tranquility
       </h3>
     </div>
